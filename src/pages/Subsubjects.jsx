@@ -12,7 +12,7 @@ const Subsubjects = () => {
   console.log("Id from url:",id)
 
   useEffect(()=>{
-    axios.get(`http://127.0.0.1:8000/GetSubSubjects/${id}`).then(response=>setCards(response.data)).catch(error=>console.error(error));
+    axios.get(`https://workhole.pythonanywhere.com/GetSubSubjects/${id}`).then(response=>setCards(response.data)).catch(error=>console.error(error));
   },[id]);
 
   useEffect(() => {

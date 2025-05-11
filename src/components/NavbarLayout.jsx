@@ -10,7 +10,7 @@ const Navbar = () => {
 
   
   useEffect(() => {
-    fetch('http://localhost:8000/api/data/') 
+    fetch('https://workhole.pythonanywhere.com/api/data/') 
       .then((res) => res.json())
       .then((data) => {
         setDataList(data);

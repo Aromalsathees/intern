@@ -23,7 +23,7 @@ const Minorexam = () => {
     const [related,setrelated] = useState([])
 
     useEffect(()=>{
-        axios.get(`http://localhost:8000/GetPopularRelatedExams/${id}`).then(response=>{
+        axios.get(`https://workhole.pythonanywhere.com/GetPopularRelatedExams/${id}`).then(response=>{
           console.log(response.data)
             setpopular(response.data.popular_serializer);
             setrelated(response.data.related_serializer);

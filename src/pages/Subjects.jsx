@@ -7,7 +7,7 @@ const Subjects = () => {
   const [cards,setCards] = useState([])
 
   useEffect(()=>{
-    axios.get('http://127.0.0.1:8000/createlistSubjects').then(response=>setCards(response.data)).catch(error=>console.error(error));
+    axios.get('https://workhole.pythonanywhere.com/createlistSubjects').then(response=>setCards(response.data)).catch(error=>console.error(error));
   },[])
 
   useEffect(() => {

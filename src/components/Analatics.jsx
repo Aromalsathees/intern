@@ -10,7 +10,7 @@ const Analatics = () => {
   const [book,setbook] = useState([]);
 
   useEffect(()=>{
-    axios.get('http://127.0.0.1:8000/createlistSubjects').then(response => setbook(response.data)).catch(error => console.error(error));
+    axios.get('https://workhole.pythonanywhere.com/createlistSubjects').then(response => setbook(response.data)).catch(error => console.error(error));
     
   },[]);
  

@@ -15,7 +15,7 @@ const query = new URLSearchParams(location.search).get('q')
 useEffect(() => {
   if (query) {
     axios
-      .get(`http://localhost:8000/get-top-pop-search/?q=${query}`)
+      .get(`https://workhole.pythonanywhere.com/get-top-pop-search/?q=${query}`)
       .then(response =>
          Setdata(response.data))
       .catch(error => console.error(error));

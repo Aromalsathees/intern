@@ -19,7 +19,7 @@ const Contactus = () => {
   const handleSubmit = (e) => {
     e.preventDefault(); 
 
-    axios.post('http://localhost:8000/add-user-details', cards)
+    axios.post('https://workhole.pythonanywhere.com/add-user-details', cards)
       .then(response => {
         console.log('Form submitted successfully:', response.data);
         setSuccessMsg('Form submitted successfully!');

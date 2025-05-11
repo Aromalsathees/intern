@@ -10,7 +10,7 @@ const Materialresorses = () => {
 
   useEffect(() => {
     if (id && model) {
-      axios.get(`http://localhost:8000/get-material-resources/${id}/?model=${model}`)
+      axios.get(`https://workhole.pythonanywhere.com/get-material-resources/${id}/?model=${model}`)
         .then(response => {
           console.log(response.data);
           setSubject(response.data);
