@@ -141,8 +141,6 @@
 
 
 
-
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -165,7 +163,7 @@ const Analatics = () => {
       </div>
 
       {/* Categories */}
-      <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-2 gap-6 sm:mx-8 mx-2">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 sm:mx-8 mx-2">
         {[
           { title: 'Subjects', icon: 'https://img.icons8.com/ios-filled/50/math.png', link: '/subjects' },
           { title: 'Courses', icon: 'https://img.icons8.com/ios-filled/50/physics.png', link: '/course' },
@@ -185,7 +183,7 @@ const Analatics = () => {
       {/* Featured */}
       <div className="text-2xl font-bold text-gray-500 mt-12 sm:ml-4">Featured Materials</div>
 
-      <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-2 gap-6 mt-6 p-4 bg-yellow-50 rounded-2xl shadow sm:mx-8 mx-2">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mt-6 p-4 bg-yellow-50 rounded-2xl shadow sm:mx-8 mx-2">
         {[
           {
             title: 'JavaScript',
@@ -221,16 +219,3 @@ const Analatics = () => {
 };
 
 export default Analatics;
-
-
-
-
-
-
-
-
-
-
-
-
-
