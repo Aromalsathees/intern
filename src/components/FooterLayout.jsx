@@ -59,7 +59,7 @@ const Footer = () => {
     <div className='w-full bg-blue-50 px-4 py-7 mt-10'>
       
       {/* Desktop / Laptop View */}
-      <div className='hidden md:grid max-w-6xl mx-auto grid-cols-4 gap-8'>
+      <div className='hidden md:grid max-w-6xl mx-auto grid-cols-4 gap-8 lg:mr-20 mr-15 lg:ml-20 lg:gap-20'>
         <div className='flex flex-col'>
           <div className='text-blue-300 font-bold text-3xl'>Study Hub.</div>
         </div>

@@ -227,7 +227,7 @@ exams routes starts here */}
               <NavbarLayout/>
               <Getstarted />
               <Analatics />
-              <FooterLayout/>
+              <Footer/>
             </>
           }
         />
