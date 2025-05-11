@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -56,12 +57,12 @@ const Navbar = () => {
 
         <li className="hover:bg-green-200 rounded-full cursor-pointer px-5 py-3 flex items-center gap-2 font-bold">
           <span className="material-symbols-outlined text-black">settings</span>
-          <a href="/home" className="text-black font-bold">Jobs</a>
+          <Link to="/home" className="text-black font-bold">Jobs</Link>
         </li>
 
         <li className="hover:bg-green-200 rounded-full cursor-pointer px-5 py-3 flex items-center gap-2 font-bold">
           <span className="material-symbols-outlined text-black">person</span>
-          <a href="/about" className="text-black font-bold">About Us</a>
+          <Link to="/about" className="text-black font-bold">About Us</Link>
         </li>
 
         <li>
