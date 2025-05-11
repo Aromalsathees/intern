@@ -139,8 +139,6 @@
 // export default Analatics
 
 
-
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
@@ -163,14 +161,14 @@ const Analatics = () => {
       </div>
 
       {/* Categories */}
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 sm:mx-8 mx-2">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:mx-8 mx-2">
         {[
           { title: 'Subjects', icon: 'https://img.icons8.com/ios-filled/50/math.png', link: '/subjects' },
           { title: 'Courses', icon: 'https://img.icons8.com/ios-filled/50/physics.png', link: '/course' },
           { title: 'Exams', icon: 'https://img.icons8.com/ios-filled/100/exam.png', link: '/exams' },
           { title: 'Job', icon: 'https://img.icons8.com/ios-filled/50/computer.png', link: '/home' },
         ].map((item, index) => (
-          <div key={index} className="bg-white p-6 rounded-2xl shadow hover:shadow-lg text-center">
+          <div key={index} className="bg-white p-6 rounded-2xl shadow hover:shadow-lg text-center flex flex-col items-center justify-between">
             <img src={item.icon} alt={item.title} className="mx-auto mb-4 w-12 h-12" />
             <h2 className="text-xl font-semibold text-gray-800">{item.title}</h2>
             <Link to={item.link}>
@@ -183,7 +181,7 @@ const Analatics = () => {
       {/* Featured */}
       <div className="text-2xl font-bold text-gray-500 mt-12 sm:ml-4">Featured Materials</div>
 
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-6 mt-6 p-4 bg-yellow-50 rounded-2xl shadow sm:mx-8 mx-2">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-6 p-4 bg-yellow-50 rounded-2xl shadow sm:mx-8 mx-2">
         {[
           {
             title: 'JavaScript',
@@ -218,4 +216,4 @@ const Analatics = () => {
   );
 };
 
-export default Analatics;
+export default Analatics
